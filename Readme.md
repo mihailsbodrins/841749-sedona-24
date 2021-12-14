@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Mihails Bodrins](https://up.htmlacademy.ru/adaptive/24/user/841749).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
