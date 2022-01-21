@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>«Седона»</title>
+</head>
+<body class="page__body">
+
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-image" src="../source/img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-form">
+
+    <h1 class="visually-hidden">Опросник Седоны</h1>
+
+    <div class="page-form__wrapper">
+      <img class="page-form__name" src="../source/img/name-sedona.svg" width="229" height="39" alt="Надпись Седона">
+      <img class="page-form__image" src="../source/img/photo-narrow-canyon2-mobile@1x.jpg" height="158" alt="Фото каньона">
+    </div>
+
+    <section class="feedback-form">
+      <h2 class="visually-hidden">Отзыв путешествие в Седоне</h2>
+      <div class="feedback-form__wrapper">
+        <b class="feedback-form__request">Оставьте свой отзыв</b>
+        <p class="feedback-form__request-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="feedback-form__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="feedback-form__wrapper name-questionnaire">
+          <fieldset class="name-questionnaire__fieldset">
+            <legend class="name-questionnaire__title">Представьтесь:</legend>
+            <label class="name-questionnaire__description">Имя<sup>*</sup>:
+              <input class="name-questionnaire__text-field" placeholder="Пётр" type="text" name="first-name" required>
+            </label>
+            <label class="name-questionnaire__description">Фамилия<sup>*</sup>:
+              <input class="name-questionnaire__text-field" placeholder="Иванов" type="text" name="last-name" required>
+            </label>
+            <label class="name-questionnaire__description">Отчество:
+              <input class="name-questionnaire__text-field" placeholder="Александрович" type="text" name="patronymic-name">
+            </label>
+          </fieldset>
+        </div>
+        <div class="feedback-form__wrapper contact-questionnaire">
+          <fieldset class="contact-questionnaire__fieldset">
+            <legend class="contact-questionnaire__title">Контактная информация:</legend>
+            <label class="contact-questionnaire__description">Контактный телефон<sup>*</sup>:
+              <input class="contact-questionnaire__text-field" placeholder="Введите телефон" type="tel" name="phone" required>
+              <span class="contact-questionnaire__icon--phone"></span>
+            </label>
+            <label class="contact-questionnaire__description">Электронная почта<sup>*</sup>:
+              <input class="contact-questionnaire__text-field" placeholder="Введите e-mail" type="email" name="email" required>
+              <span class="contact-questionnaire__icone--mail"></span>
+            </label>
+          </fieldset>
+        </div>
+        <div class="feedback-form__wrapper impression-questionnaire">
+          <fieldset class="impression-questionnaire__fieldset">
+            <legend class="impression-questionnaire__title">Ваше общее впечатление:</legend>
+            <ul class="impression-questionnaire__list">
+              <li class="impression-questionnaire__item item-radio">
+                <label class="item-radio__positive">
+                  <input class="visually-hidden item-radio__input" type="radio" name="impression-group" value="Скорее положительное" checked="">
+                  <span class="item-radio__mark"></span>
+                  <span class="item-radio__label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="impression-questionnaire__item item-radio">
+                <label class="item-radio__negative">
+                  <input class="visually-hidden item-radio__input" type="radio" name="impression-group" value="Скорее отрицательное">
+                  <span class="item-radio__mark"></span>
+                  <span class="item-radio__label">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item item-radio">
+                <label class="item-radio__undecided">
+                  <input class="visually-hidden item-radio__input" type="radio" name="impression-group" value="Затрудняюсь ответить">
+                  <span class="item-radio__mark"></span>
+                  <span class="item-radio__label">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="feedback-form__wrapper-sights sights-questionnaire">
+          <fieldset class="sights-questionnaire__fieldset">
+            <legend class="sights-questionnaire__title">Посещенные достопримечательности:</legend>
+            <ul class="sights-questionnaire__list">
+              <li class="sights-questionnaire__item item-checkbox">
+                <label class="item-checkbox__sights">
+                  <input class="visually-hidden item-checkbox__input" type="checkbox" name="Devil`s Bridge" checked="">
+                  <span class="item-checkbox__mark"></span>
+                  <span class="item-checkbox__label">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="sights-questionnaire__item item-checkbox">
+                <label class="item-checkbox__sights">
+                  <input class="visually-hidden item-checkbox__input" type="checkbox" name="Bell Rock" checked="">
+                  <span class="item-checkbox__mark"></span>
+                  <span class="item-checkbox__label">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="sights-questionnaire__item item-checkbox">
+                <label class="item-checkbox__sights">
+                  <input class="visually-hidden item-checkbox__input" type="checkbox" name="Slide Park" checked="">
+                  <span class="item-checkbox__mark"></span>
+                  <span class="item-checkbox__label">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="sights-questionnaire__item item-checkbox">
+                <label class="item-checkbox__sights">
+                  <input class="visually-hidden item-checkbox__input" type="checkbox" name="Red Rock">
+                  <span class="item-checkbox__mark"></span>
+                  <span class="item-checkbox__label">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="feedback-form__wrapper-emotions emotions-questionnaire">
+          <fieldset class="emotions-questionnaire">
+            <legend class="emotions-questionnaire__title">Опишите свои эмоции:</legend>
+            <label class="visually-hidden emotions-questionnaire__description">Заполни поле
+              <textarea class="emotions-questionnaire__text-field" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
+          </fieldset>
+        </div>
+        <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag-title">
+        <b class="hashtag-title">#visitsedona</b>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
